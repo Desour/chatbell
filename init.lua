@@ -48,6 +48,7 @@ minetest.register_on_receiving_chat_messages(function(omsg)
 	end
 	local lmsg, loname = msg:lower(), own_name:lower()
 	for i = 1, #lmsg do
+		local f
 		f, i = lmsg:find(loname, i)
 		if not f then
 			return
