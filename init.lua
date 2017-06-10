@@ -41,7 +41,7 @@ minetest.register_on_connect(function()
 	blocked[own_name] = true
 end)
 
-minetest.register_on_receiving_chat_messages(function(omsg)
+minetest.register_on_receiving_chat_message(function(omsg)
 	local msg = get_msg(omsg)
 	if not msg then
 		return
